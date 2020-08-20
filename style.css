@@ -258,8 +258,12 @@ body{
      overflow: auto;
    }
    .cards-container::-webkit-scrollbar{
-     width: 0;
-     height: 0;
+     width: 5px;
+     height: 5px;
+   }
+   .cards-container::-webkit-scrollbar-thumb{
+     background-color: rgba(0,0,200, 0.1);
+     border-radius: 50px;
    }
    .iphone-pos{
      display: flex;
@@ -281,6 +285,7 @@ body{
      border: none;
      transition: transform 0.4s ease;
      z-index: 20;
+     margin-top:10px;
    }
    .top-pic:hover{
      transform: scale(1.1);
@@ -289,7 +294,7 @@ body{
      font-size: 16px;
      font-weight: bold;
      color: rgb(59,71,106);
-     padding-top: 20px;
+     padding-top: 10px;
    }
    .artist{
      font-size: 14px;
@@ -424,7 +429,12 @@ body{
 .cd{
   border-radius: 50%;
   margin-bottom: 12px;
+  transition: transform 0.4s ease;
 }
+.cd:hover{
+  transform: scale(1.1);
+}
+
 .cd-hole{
   width: 40px;
   height: 40px;
