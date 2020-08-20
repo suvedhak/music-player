@@ -6,7 +6,7 @@
 
 body{
   background-color: #F9FAFE;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .flex-container{
@@ -271,12 +271,19 @@ body{
      display: flex;
      flex-direction: column;
      margin:0 15px 5px 15px;
-     /* width: calc(25% - 10px); */
+
    }
+
+
    .top-pic{
      height: 180px;
      border-radius: 15px;
      border: none;
+     transition: transform 0.4s ease;
+     z-index: 20;
+   }
+   .top-pic:hover{
+     transform: scale(1.1);
    }
    .album{
      font-size: 16px;
